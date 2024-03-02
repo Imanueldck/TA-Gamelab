@@ -75,14 +75,14 @@ section h3 {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap; /* Menambahkan flex-wrap untuk responsif */
-  justify-content: center; /* Menengahkan konten secara horizontal */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about-column {
-  width: calc(50% - 40px); /* Menetapkan lebar kolom */
-  margin: 20px; /* Menambahkan jarak antar kolom */
-  text-align: justify; /* Mengatur teks agar berada di tengah */
+  width: calc(50% - 40px);
+  margin: 20px;
+  text-align: justify;
 }
 
 .about-column h2 {
@@ -103,7 +103,7 @@ section h3 {
 /* Responsif untuk layar yang lebih kecil */
 @media (max-width: 768px) {
   .about-column {
-    width: calc(100% - 40px); /* Mengubah lebar kolom saat layar lebih kecil */
+    width: calc(100% - 40px);
   }
 }
 
@@ -158,8 +158,8 @@ footer {
   font-style: italic;
 }
 .three-columns .column a {
-  color: #333; /* Warna default */
-  transition: color 0.3s; /* Efek transisi */
+  color: #333;
+  transition: color 0.3s;
 }
 
 .three-columns .column a:hover {
@@ -274,7 +274,7 @@ footer {
 
 .slides {
   display: flex;
-  transition: transform 0.5s ease; /* Tambahkan transisi */
+  transition: transform 0.5s ease;
 }
 
 .slide {
