@@ -1,0 +1,385 @@
+* {
+  padding: 0;
+  margin-top: 0;
+  font-family: sans-serif;
+}
+#favicon {
+  width: 150px;
+  height: 50px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.medsos {
+  padding: 5px;
+  text-align: center;
+}
+.medsos ul li {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  width: 20px;
+  padding-top: 15px;
+}
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+}
+.navbar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+header {
+}
+header h1 {
+  float: left;
+  padding: 15px 0px;
+  color: #37e6f7;
+  text-shadow: 2px 2px 5px #00eaff;
+  letter-spacing: 5px;
+}
+header ul {
+  float: right;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  padding: 25px 20px;
+  display: inline-block;
+}
+header ul li a:hover {
+  background-color: #37e6f7;
+  color: #fff;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+section {
+  padding: 50px 0;
+}
+section h3 {
+  text-align: center;
+  padding: 20px 0;
+  color: #37e6f7;
+}
+
+.about-us {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /* Menambahkan flex-wrap untuk responsif */
+  justify-content: center; /* Menengahkan konten secara horizontal */
+}
+
+.about-column {
+  width: calc(50% - 40px); /* Menetapkan lebar kolom */
+  margin: 20px; /* Menambahkan jarak antar kolom */
+  text-align: justify; /* Mengatur teks agar berada di tengah */
+}
+
+.about-column h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-column p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.about-us {
+  animation: fade-in 1s ease forwards;
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+  .about-column {
+    width: calc(100% - 40px); /* Mengubah lebar kolom saat layar lebih kecil */
+  }
+}
+
+.contact {
+  background-color: #b3fae9;
+}
+footer {
+  padding: 30px 0;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(71, 212, 255));
+  color: #000000;
+  text-align: center;
+  font-size: 15px;
+}
+.three-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1 {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.three-columns .column1 img {
+  width: 150px;
+  max-height: 150px;
+  height: 120px;
+}
+.column {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.column img {
+  width: 20px;
+  height: 25px;
+  float: left;
+  margin-right: 15px;
+}
+.column1 h1 {
+  color: #37e6f7;
+  line-height: 20px;
+  letter-spacing: 7px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.column a {
+  color: #000000;
+  font-size: 17px;
+  font-style: italic;
+}
+.three-columns .column a {
+  color: #333; /* Warna default */
+  transition: color 0.3s; /* Efek transisi */
+}
+
+.three-columns .column a:hover {
+  color: blue; /* Warna saat dihover */
+}
+
+/* Tata letak dasar */
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.product p {
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons a {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: #000000;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.buttons a:hover {
+  background-color: #ffffff;
+  color: #ffffff;
+  border: none;
+}
+
+/* Media queries untuk responsif */
+@media (max-width: 768px) {
+  .product {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
+}
+
+/* Untuk layar dengan lebar 600px atau lebih kecil */
+@media only screen and (max-width: 600px) {
+  .three-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Untuk layar dengan lebar 768px atau lebih kecil */
+@media only screen and (max-width: 768px) {
+  .three-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Untuk layar dengan lebar 1024px atau lebih kecil */
+@media only screen and (max-width: 1024px) {
+  .three-columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    width: 33.33%;
+    margin-bottom: 20px;
+  }
+}
+.banner-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease; /* Tambahkan transisi */
+}
+
+.slide {
+  min-width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slider-nav label {
+  cursor: pointer;
+  background-color: #ccc;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.slider-nav label:hover {
+  background-color: #555;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Show slides based on radio button state */
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+#slide1:checked ~ .slider-nav label:nth-child(1),
+#slide2:checked ~ .slider-nav label:nth-child(2),
+#slide3:checked ~ .slider-nav label:nth-child(3) {
+  background: #007bff;
+}
+
+.buy-button:hover,
+.detail-button:hover {
+  background-position: 100% 0;
+}
+
+/* Untuk efek tambahan saat tombol dihover */
+.buy-button,
+.detail-button {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #007bff 50%);
+  background-size: 200% 100%;
+  transition: background-position 1s ease;
+}
+
+.buy-button:hover,
+.detail-button:hover {
+  background-position: -100% 0;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.discount-percentage {
+  color: #fff;
+  background-color: #d14;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
